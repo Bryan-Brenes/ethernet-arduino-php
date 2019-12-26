@@ -1,8 +1,8 @@
 <?php
   if(isset($_GET['dato'])){
-    echo "Se envió " . $_GET['dato'];
+    echo "Se envió " . $_GET['dato'] . "<br>";
     // detalles de la conexion
-    $conn_string = "host=ec2-107-22-216-123.compute-1.amazonaws.com port=5432 dbname=dmqe2uft63ru6 user=pdypewzcmiidot password=ddf779b97e2cb698f922969424bc258f4d1649784be568a569a8c2be90ee7a9c options='--client_encoding=UTF8' ssl='true'";
+    $conn_string = "host=ec2-107-22-216-123.compute-1.amazonaws.com port=5432 dbname=dmqe2uft63ru6 user=pdypewzcmiidot password=ddf779b97e2cb698f922969424bc258f4d1649784be568a569a8c2be90ee7a9c options='--client_encoding=UTF8' ssl=true";
     
     // establecemos una conexion con el servidor postgresSQL
     $dbconn = pg_connect($conn_string);
